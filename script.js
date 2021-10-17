@@ -90,6 +90,9 @@ function solve() {
     let x = document.querySelector("#disp").value;
     let result = eval(x);
       if (result == undefined)
-        result = "";
+          alert("Please enter value")
+      if(result =="")
+          alert("Incorrect Expression")
+        
     document.querySelector("#answerbox").value = result;
 }
