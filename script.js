@@ -89,7 +89,6 @@ function cleardata() {
 
 function solve() {
     let x = document.querySelector("#disp").value;
-    let result = eval(x);
     try {
         var result = eval(x)
     }
