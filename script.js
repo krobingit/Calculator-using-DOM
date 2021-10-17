@@ -55,13 +55,6 @@ document.body.innerHTML = `<div class="container">
         </div>
 
     </div>
-
-
-
-
-
-
-
 </div>
 </div>
 `
