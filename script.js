@@ -95,6 +95,8 @@ function cleardata() {
 
 function solve() {
     let x = document.querySelector("#disp").value;
-    let result = eval(x)
+    let result = eval(x);
+      if (result == undefined)
+        result = "";
     document.querySelector("#answerbox").value = result;
 }
