@@ -43,9 +43,13 @@ input[type=number]::-webkit-inner-spin-button{
     border: 1px solid green;
   }
 
-@media(min-width:350px)
+ @media(min-width:350px)
 {
 
+    .displayBlock{
+        display: flex;
+        justify-content: space-between;
+    }
     .calBlock{
       
         min-width: 340px;
@@ -66,9 +70,15 @@ input[type=number]::-webkit-inner-spin-button{
      }
 }
 
-  @media(min-width:500px)
+  @media(min-width:440px)
 {
 
+    .displayBlock{
+        height:70px;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
     .calBlock{
       
         min-width: 350px;
@@ -92,6 +102,12 @@ input[type=number]::-webkit-inner-spin-button{
 @media(min-width:720px)
 {
 
+    .displayBlock{
+        height:70px;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
     .calBlock{
        
         min-width: 600px;
@@ -115,6 +131,12 @@ input[type=number]::-webkit-inner-spin-button{
 
 @media(min-width:950px)
 {
+    .displayBlock{
+        height:70px;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
 
     .calBlock{
        
@@ -139,7 +161,6 @@ input[type=number]::-webkit-inner-spin-button{
  }
  
 }
-
 table td{
     padding: 20px;
   
