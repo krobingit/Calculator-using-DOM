@@ -8,7 +8,7 @@ document.body.innerHTML = `<div class="container">
         <div class="calBlock">
             <div class="displayBlock">
                 <div>
-                    <input type="text" placeholder="Calculate here.." id="disp" maxlength="30">
+                    <input type="text" placeholder="Calculate here.." id="disp" autofocus>
                 </div>
                 <div>
                     <input class="btn btn-success" type="button" value="Calculate" id="ans" onclick="solve()">
