@@ -90,7 +90,10 @@ function solve() {
     let x = document.querySelector("#disp").value;
     let result = eval(x);
       if (result == undefined)
+      {
           alert("Please enter value")
+          result=""
+      }
       if(result =="")
           alert("Incorrect Expression")
         
