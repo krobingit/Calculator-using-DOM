@@ -63,13 +63,14 @@ document.querySelector("#disp").oninput = () => {
 
 
     if (reg.test(document.querySelector("#disp").value)) {
-        console.log(`if= ${reg.test(document.querySelector("#disp").value)}`)
+        
+        localStorage.setItem("val", document.querySelector("#disp").value);
 
     }
     else {
-        console.log(`else= ${reg.test(document.querySelector("#disp").value)}`)
+       
         alert("Only Numbers are Allowed");
-        document.querySelector("#disp").value = "";
+        document.querySelector("#disp").value = localStorage.getItem("val")
 
     }
 
@@ -93,9 +94,6 @@ function solve() {
       {
           alert("Please enter value")
           result=""
-      }
-      if(result =="")
-          alert("Incorrect Expression")
-        
+      }    
     document.querySelector("#answerbox").value = result;
 }
