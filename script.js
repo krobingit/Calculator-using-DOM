@@ -68,7 +68,7 @@ document.body.innerHTML = `<div class="container">
 </div>
 `
 document.querySelector("#disp").oninput = () => {
-    let reg = new RegExp(/(^$|^[\d%()/+*-]+$)/);
+    let reg = new RegExp(/(^$|^[\d%()./+*-]+$)/);
 
 
     if (reg.test(document.querySelector("#disp").value)) {
