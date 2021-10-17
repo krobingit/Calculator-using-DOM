@@ -30,24 +30,33 @@ document.body.innerHTML = `<div class="container">
                         <td><input type="button" value="1" onclick="displaydata('1')" /> </td>
                         <td><input type="button" value="2" onclick="displaydata('2')" /> </td>
                         <td><input type="button" value="3" onclick="displaydata('3')" /> </td>
-                        <td><input type="button" value="/" onclick="displaydata('/')" /> </td>
+                        <td><input type="button" value="⟵" onclick="backspace()" /> </td>
                     </tr>
                     <tr>
                         <td><input type="button" value="4" onclick="displaydata('4')" /> </td>
                         <td><input type="button" value="5" onclick="displaydata('5')" /> </td>
                         <td><input type="button" value="6" onclick="displaydata('6')" /> </td>
-                        <td><input type="button" value="-" onclick="displaydata('-')" /> </td>
+                        <td><input type="button" value="/" onclick="displaydata('/')" /> </td>
+                       
                     </tr>
                     <tr>
                         <td><input type="button" value="7" onclick="displaydata('7')" /> </td>
                         <td><input type="button" value="8" onclick="displaydata('8')" /> </td>
                         <td><input type="button" value="9" onclick="displaydata('9')" /> </td>
-                        <td><input type="button" value="+" onclick="displaydata('+')" /> </td>
+                        <td><input type="button" value="-" onclick="displaydata('-')" /> </td>
+                        
                     </tr>
                     <tr>
                         <td><input type="button" value="0" onclick="displaydata('0')" /> </td>
                         <td><input type="button" value="%" onclick="displaydata('%')" /> </td>
                         <td><input type="button" value="=" onclick="solve()" /> </td>
+                        <td><input type="button" value="+" onclick="displaydata('+')" /> </td>
+                        
+                    </tr>
+                    <tr>
+                    <td><input type="button" value="(" onclick="displaydata('(')" /></td>
+                    <td><input type="button" value=")" onclick="displaydata(')')" /></td>
+                        <td><input type="button" value="." onclick="displaydata('.')" /> </td>
                         <td><input type="button" value="*" onclick="displaydata('*')" /> </td>
                     </tr>
                 </table>
@@ -63,12 +72,12 @@ document.querySelector("#disp").oninput = () => {
 
 
     if (reg.test(document.querySelector("#disp").value)) {
-        
+
         localStorage.setItem("val", document.querySelector("#disp").value);
 
     }
     else {
-       
+
         alert("Only Numbers are Allowed");
         document.querySelector("#disp").value = localStorage.getItem("val")
 
@@ -86,21 +95,25 @@ function cleardata() {
     document.querySelector("#answerbox").value = '';
 
 }
-
+function backspace() {
+    let val = document.querySelector("#disp").value;
+    document.querySelector("#disp").value = val.substr(0, val.length - 1)
+}
 function solve() {
     let x = document.querySelector("#disp").value;
     try {
         var result = eval(x)
     }
     catch (err) {
-        if (result == undefined)
-        alert("Enter a valid expression")
-        result=""
+        if (result == undefined) {
+            alert("Enter a valid expression")
+            result = ""
+        }
     }
-      if (document.querySelector("#disp").value == "")
-      {
-          alert("Please enter value")
-          result=""
-      }    
+    if (document.querySelector("#disp").value == "") {
+        alert("Please enter values")
+        result = ""
+    }
     document.querySelector("#answerbox").value = result;
 }
+
