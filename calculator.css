@@ -1,0 +1,141 @@
+
+body{
+    background-color: rgb(85, 115, 141);
+    font-family: 'Poppins', sans-serif;
+}
+
+.calBlock{
+    border: 4px double black;
+    min-width: 360px;
+    min-height: 360px;
+    padding: 10px;
+    
+}
+input[type=number]::-webkit-inner-spin-button{
+    display: none;
+}
+.displayBlock{
+    height:70px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#disp,#answerbox{ 
+    width:220px;
+    height:40px;
+    font-size:18px;
+    outline: none;
+    padding:15px;
+    border: 1px solid green;
+    
+}
+
+#ans,#clr{
+   width:90px;
+   height:40px;
+   
+}
+
+#disp:focus {
+   
+    box-shadow: 0 0 5px rgb(18, 196, 18);
+    border: 1px solid green;
+  }
+
+  @media(min-width:500px)
+{
+
+    .calBlock{
+      
+        min-width: 350px;
+        min-height: 400px;
+        padding: 10px;
+        
+    }
+    #disp,#answerbox{ 
+        width:280px;
+        height:50px;
+        padding: 15px;
+        font-size:23px;
+        
+    }
+    #ans,#clr{
+        width:100px;
+        height:50px;
+     }
+}
+
+@media(min-width:720px)
+{
+
+    .calBlock{
+       
+        min-width: 600px;
+        min-height: 400px;
+        padding: 10px;
+        
+    }
+    #disp,#answerbox{ 
+        width:380px;
+        height:50px;
+        padding: 15px;
+        font-size:23px;
+   
+        
+    }
+    #ans,#clr{
+        width:150px;
+        height:50px;
+     }
+}
+
+@media(min-width:950px)
+{
+
+    .calBlock{
+       
+        min-width: 800px;
+        min-height: 400px;
+        padding: 10px;
+        
+    }
+    #disp,#answerbox  {
+        width:550px;
+        height:50px;
+        padding: 15px;
+        font-size:23px;
+        
+    }
+
+    
+#ans,#clr{
+    width:110px;
+    height:50px;
+    
+ }
+ 
+}
+
+table td{
+    padding: 20px;
+  
+}
+table td>input{
+    width:50px;
+height:50px;
+background-color: rgb(214, 237, 245);
+font-size: 30px;
+font-weight: bold;
+border: 2px solid black;
+  
+}
+.calculator-body{
+    display: flex;
+    justify-content: center;
+}
+
+.clrblock{
+    display: flex;
+    justify-content: space-evenly;
+}
