@@ -86,7 +86,7 @@ document.querySelector("#disp").oninput = () => {
 }/*   ^[^a-zA-Z]+$   ^$|^[^a-zA-Z !$@#^&:;?<>`~"'.,]+$  */
 
 function displaydata(val) {
-
+      document.querySelector("#disp").focus();
     document.querySelector("#disp").value += val;
 }
 
