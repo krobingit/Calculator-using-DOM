@@ -8,7 +8,7 @@ body{
     border: 4px double black;
     min-width: 360px;
     min-height: 360px;
-    padding: 10px;
+    padding: 8px;
     
 }
 input[type=number]::-webkit-inner-spin-button{
@@ -26,7 +26,7 @@ input[type=number]::-webkit-inner-spin-button{
     height:40px;
     font-size:18px;
     outline: none;
-    padding:15px;
+    padding:10px;
     border: 1px solid green;
     
 }
@@ -43,7 +43,7 @@ input[type=number]::-webkit-inner-spin-button{
     border: 1px solid green;
   }
 
- @media(min-width:350px)
+  @media(min-width:350px)
 {
 
     .displayBlock{
@@ -53,7 +53,7 @@ input[type=number]::-webkit-inner-spin-button{
     .calBlock{
       
         min-width: 340px;
-        min-height: 400px;
+        min-height:500px;
         padding: 10px;
         
     }
@@ -111,7 +111,7 @@ input[type=number]::-webkit-inner-spin-button{
     .calBlock{
        
         min-width: 600px;
-        min-height: 400px;
+        min-height: 450px;
         padding: 10px;
         
     }
@@ -140,13 +140,13 @@ input[type=number]::-webkit-inner-spin-button{
 
     .calBlock{
        
-        min-width: 800px;
-        min-height: 400px;
+        min-width: 700px;
+        min-height: 550px;
         padding: 10px;
         
     }
     #disp,#answerbox  {
-        width:550px;
+        width:500px;
         height:50px;
         padding: 15px;
         font-size:23px;
@@ -161,8 +161,9 @@ input[type=number]::-webkit-inner-spin-button{
  }
  
 }
+
 table td{
-    padding: 20px;
+    padding: 15px;
   
 }
 table td>input{
@@ -183,3 +184,5 @@ border: 2px solid black;
     display: flex;
     justify-content: space-evenly;
 }
+
+
