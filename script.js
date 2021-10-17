@@ -17,7 +17,7 @@ document.body.innerHTML = `<div class="container">
             </div>
 
             <div class="clrblock">
-                <input class="btn btn-info" type="button" value="Clear" id="clr" onclick="cleardata()">
+                <input class="btn btn-info" type="button" value="Clear All" id="clr" onclick="cleardata()">
                 <input readonly type="text" id="answerbox" placeholder="Answer">
             </div>
 
