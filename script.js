@@ -90,6 +90,12 @@ function cleardata() {
 function solve() {
     let x = document.querySelector("#disp").value;
     let result = eval(x);
+    try {
+        var result = eval(x)
+    }
+    catch (err) {
+        alert("Enter a valid expression")
+    }
       if (result == undefined)
       {
           alert("Please enter value")
