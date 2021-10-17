@@ -68,7 +68,7 @@ document.querySelector("#disp").oninput = () => {
     }
     else {
         console.log(`else= ${reg.test(document.querySelector("#disp").value)}`)
-        alert("Only Numbers Allowed");
+        alert("Only Numbers are Allowed");
         document.querySelector("#disp").value = "";
 
     }
