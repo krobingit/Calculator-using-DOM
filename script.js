@@ -93,9 +93,11 @@ function solve() {
         var result = eval(x)
     }
     catch (err) {
+        if (result == undefined)
         alert("Enter a valid expression")
+        result=""
     }
-      if (result == undefined)
+      if (document.querySelector("#disp").value == "")
       {
           alert("Please enter value")
           result=""
