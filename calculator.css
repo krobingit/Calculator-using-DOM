@@ -43,6 +43,29 @@ input[type=number]::-webkit-inner-spin-button{
     border: 1px solid green;
   }
 
+@media(min-width:350px)
+{
+
+    .calBlock{
+      
+        min-width: 340px;
+        min-height: 400px;
+        padding: 10px;
+        
+    }
+    #disp,#answerbox{ 
+        width:200px;
+        height:45px;
+        padding: 15px;
+        font-size:17px;
+        
+    }
+    #ans,#clr{
+        width:100px;
+        height:45px;
+     }
+}
+
   @media(min-width:500px)
 {
 
